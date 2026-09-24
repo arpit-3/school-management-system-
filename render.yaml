@@ -4,7 +4,6 @@ services:
     name: fln-school-backend
     runtime: python
     rootDir: backend
-    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python run.py setup && gunicorn run:app --bind 0.0.0.0:$PORT
     envVars:
@@ -24,7 +23,6 @@ services:
     name: fln-school-frontend
     runtime: static
     rootDir: frontend
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     routes:
