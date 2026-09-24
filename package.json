@@ -1,0 +1,12 @@
+{
+  "name": "fln-xml-system",
+  "version": "1.0.0",
+  "description": "FLN XML System - AI School Assessment, Analytics & Excel Reporting System",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "test:backend": "cd backend && .venv\\Scripts\\pytest -v tests",
+    "start:backend": "cd backend && .venv\\Scripts\\python run.py"
+  }
+}
